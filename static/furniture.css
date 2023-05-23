@@ -1,0 +1,435 @@
+#bimage{
+    background:url('images/sofa3.jpg');
+    background-size:cover;
+}
+#bimage>.col-md-12{
+    padding:150px 100px;
+    
+}
+.left{
+    text-align:left;
+}
+#collection{
+    color:brown;
+    font-size:80px;
+    padding-bottom:40px;
+}
+#font{
+    font-size:80px;
+}
+#navbarDropdown{
+    color:white;
+    font-weight:bold;
+}
+
+#button {
+    background:none;
+    text-align:center;
+}
+#button:hover{
+    background:grey;
+    color:black;
+}
+.one{
+    color:#f0a10e;
+}
+#align{
+    text-align:left;
+}
+#class{
+    text-decoration:light;
+}
+.onealign{
+    text-align:center;
+}
+
+#nav a:hover{
+    color:#b01c1c;
+
+}
+#alignment{
+    text-align:center;
+}
+#fontsize{
+    font-size:60px;
+}
+#size{
+    font-size:20px;
+}
+#color{
+    font-family: 'sassy frass', cursive;
+    color:grey;
+}
+#backimage{
+    background:url('images/tablechairrrr.jpg');
+    background-size:cover;
+    width:50%;
+    height:500px;
+}
+#backimage>.col-md-6{
+    padding:150px 100px;
+    background:rgba(0,0,0,0.8);
+}
+#backimage1{
+    background:url('images/bluebed.webp');
+    background-size:cover;
+    width:50%;
+}
+#backimage1>.col-md-6{
+    padding:150px 100px;
+    background:rgba(0,0,0,0.8);
+}
+#shop{
+    background:white;
+}
+#shop:hover{
+    background:none;
+    color:black;    
+}
+#background{
+    background:white;
+}
+#background:hover{
+    background:none;
+    color:white;
+}
+#sale{
+    color:brown;
+}
+#now{
+    font-family: 'Sassy Frass', cursive;
+    font-size:70px;
+}
+#discover{
+    font-size:50px;
+}
+#new{
+    font-family: 'Sassy Frass', cursive;
+    font-size:70px;
+}
+#geniunely{
+    background:grey;
+}
+#geniunely:hover{
+    background:brown;
+    
+}
+#paragraph{
+    font-size:22px;
+}
+#sofa{
+    background:url('images/sofa10.jpeg');
+    background-size:cover;
+    height:90%;
+}
+#sofa>.col-md-12{
+    padding:150px 100px;
+}
+#paddingpic{
+    margin-top:50px;
+}
+
+.custom{
+    font-family: 'Sassy Frass', cursive;
+    font-size:90px;
+}
+#light{
+    background:url('images/hsofa.jpg');
+    background-size:cover;
+    margin-top:100px;
+}
+#light>.col-md-12{
+    padding:150px 100px;
+}
+.product{
+    font-size:50px;
+}
+.nav{
+    font-size:30px;
+}
+.dedication{
+    font-size:60px;
+}
+#made{
+    background:none;
+}
+#made:hover{
+    background:grey;
+}
+.original{
+    font-size:45px;
+}
+.nav{
+    font-size:20px;
+}
+.interiors{
+    font-size:20px;
+}
+#submit{
+    background:none;
+}
+#submit:hover{
+    background:brown;
+}
+#contactimage{
+        background:url('images/contact1.jpg');
+        background-size:cover;
+    }
+#contactimage>.col-md-12{
+        padding:150px 100px;
+}
+
+#list{
+    color:black;
+}
+#padding{
+    padding-bottom:150px;
+}
+#prow{
+    padding-bottom:125px;
+}
+.pcol{
+    padding-bottom:50px;
+}
+#contact3{
+    background:url('images/contact3.jpg');
+    background-size:cover;
+}
+#contact3>.col-md-12{
+    padding:150px 100px;
+}
+.container{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.counter-box {
+	display: block;
+	background: grey;
+	padding: 40px 20px 37px;
+	text-align: center
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+
+.counter { 
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+#iconf1{
+    font-size:40px;
+    color:#b01c1c;
+}
+#iconf{
+    font-size:40px;
+    color:goldenrod;
+    
+}
+#iconf2{
+    font-size:40px;
+    color:blueviolet;
+}
+
+.form{
+    margin-top:30px;
+}
+.margin{
+    margin-top:200px;
+    margin-bottom:100px;
+}
+.icon2{
+    font-size:60px;
+    color:goldenrod;
+    line-height:40px;
+}
+.spacing{
+    line-height:40px;
+}
+#aboutus{
+    margin-top:30px;
+}
+.natural{
+    margin-top:30px;
+    color:grey;
+}
+.real{
+    color:grey;
+    font-size:17px;
+}
+#gallery{
+    margin-top:30px;
+    font-size:25px;
+    background:none;
+}
+#gallery:hover{
+    background:grey;
+    
+}
+#review{
+    margin-top:30px;
+}
+
+#deliver1{
+    font-size:20px;
+}
+.connect1{
+    font-size:25px;
+}
+.moga{
+    color:#e0a912;
+}
+.blog1{
+    font-size:30px;
+    color:goldenrod;
+}
+.post{
+    text-align: right;
+    color:goldenrod;
+}
+#blogpic{
+    background:none;
+}
+#blogpic:hover{
+    border:6px solid whitesmoke;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:10px 5px 10px whitesmoke;
+}
+.roundedcorners{
+    border-radius:20px 20px 20px 20px;
+    transition: transform 1s;
+}
+.roundedcorners:hover {
+    transform: scale(1.5); 
+}
+.faq1{
+    font-size:20px;
+    color:goldenrod;
+    font-weight:bold;
+}
+#radiuspic{
+    border-radius:20px 20px 20px 20px;
+}
+.answer{
+    color:goldenrod;
+    font-size:17px;
+}
+.message1{
+    font-size:20px;
+}
+.messageus{
+    color:goldenrod;
+}
+.height1{
+    min-height:300px;
+}
+.shadow11{
+   
+    border:6px solid whitesmoke;
+    box-shadow:5px  5px 5px whitesmoke;
+   
+}
+.loginmargin{
+    margin-top:10px;
+}
+#showroom11{
+    font-size:22px;
+}
+.safe11{
+    font-size:25px;
+}
+#corners11{
+    border-radius:20px 20px 20px 20px;
+    transition: transform 1s;
+}
+#corners11:hover {
+    transform: scale(1.5); 
+}
+.greyshadow{
+    box-shadow:10px 10px 10px 10px grey;
+}
+.material11{
+    font-size:20px;
+}
+.safe15{
+    font-size:20px;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.outlet{
+    font-size:20px;
+}
+.remove{
+    color:black;
+}
+.fonthome{
+    font-size:22px;
+}
+.aboutid{
+    border:6px solid whitesmoke;
+    box-shadow:10px 10px 10px 10px grey;
+}
+.emailsize{
+    font-size:17px;
+}
+#paysuccess{
+    font-size:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

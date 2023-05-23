@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{%load static%}
+{% block title %}FAQ{% endblock %}
+{%block content%}
+<div class="row">
+  <div class="col-md-12 text-center p-5 bg-light faq1" >
+    <h1  data-aos="fade-up-left">FAQ</h1>
+    <p  data-aos="fade-up-left">Find the answers for the most frequently asked questions below</p>
+  </div>
+  {% for f in fraq %}
+  <div class="col-md-4 p-5 bg-light" data-aos="zoom-in-up">
+    <div class="bg-white p-5 height1">
+   <h4>{{ f.question }}</h4>
+   <p class="answer">{{ f.answer }}</p>
+   </div>
+  </div>
+  {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-md-12 bg-light p-5">
+  <p class=" fw-bold text-center message1">For any further query, Kindly <span><a href="/contact/" class="messageus">Message us</a></span></p>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{%load static%}
+{% block title %}Gallery{% endblock %}
+{%block content%}
+
+
+<div class="row">
+    <div class="col-md-12 text-center p-5 bg-light" >
+      <h1  data-aos="fade-up-left">Gallery</h1>
+    </div>
+    {% for g in gall %}
+    <div class="col-md-4 p-5" data-aos="zoom-in-up">
+      <div class="bg-white p-5">
+     <img src="/media/{{ g.photo }}" class="roundedcorners" width="100%" height="250" />
+     </div>
+    </div>
+    {% endfor %}
+    </div>
+
+
+
+{% endblock %}

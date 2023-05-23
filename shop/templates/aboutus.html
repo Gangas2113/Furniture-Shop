@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{%load static%}
+{% block title %}About Us{% endblock %}
+{%block content%}
+
+<div class="row p-5 bg-light">
+    <div class="col-md-6 ps-5 p-5" data-aos="zoom-in-right" id="aboutid">
+        <img src="{% static 'images/shopimage.jpg' %}" height="550px"  width="100%" />
+    </div>
+    <div class="col-md-6 ps-5 p-5">
+        <h1>A Quality in League of Its Own</h1>
+        <h4 class="natural">Natural Materials</h4>
+        <p class="real">With a real variety of miscellaneous types of furniture offered, we're always making sure to choose only the best of organic and natural materials for it.</p>
+        <h4 class="natural">Premium-grade Quality</h4>
+        <p class="real">Crafting furniture for different kinds of customers means preserving the same kind of a quality of all pieces. We do that by making sure that the quality is more prioritized than the pace of work, so that every single furniture piece we make is made to last!</p>
+        <h4 class="natural">Affordable Pricing</h4>
+        <p class="real">As the furniture is one of the most basic needs of an household might have, we never capitalize on the premium quality of our pieces. We always ensure that our pricing policy is fair enough as to allow middle-class to purchase it without a second thought!</p>
+        <a href="/gallery/">
+            <button class="btn btn-light border-dark" id="gallery">Furniture Gallery</button>
+        </a>
+    </div>
+</div>
+<!--row end-->
+<div class="row bg-light p-5">
+    <div class="col-md-12 ps-5">
+        <h1 class="ps-5">We Deliver To</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3 ps-5" id="deliver1">
+            <p class="ps-5">Amritsar</p>
+            <p class="ps-5 moga">Bathinda</p>
+            <p class="ps-5">Bhucho Mandi</p>
+            <p class="ps-5 moga">Talwandi Sabo</p>
+            <p class="ps-5">Rampura</p>
+            <p class="ps-5 moga">Maur Mandi</p>
+        </div>
+        <div class="col-md-3 ps-5" id="deliver1">
+            <p class="ps-5 moga">Faridkot</p>
+            <p class="ps-5">Moga</p>
+            <p class="ps-5 moga">Dabawali</p>
+            <p class="ps-5">Jaito</p>
+            <p class="ps-5 moga">Sunam</p>
+            <p class="ps-5">Sangrur</p>
+        </div>
+        <div class="col-md-3 ps-5" id="deliver1">
+            <p class="ps-5">Patiala</p>
+            <p class="ps-5 moga">Kotkapura</p>
+            <p class="ps-5">Malout</p>
+            <p class="ps-5 moga">Ludhiana</p>
+            <p class="ps-5">Jalandhar</p>
+            <p class="ps-5 moga">Barnala</p>
+        </div>
+        <div class="col-md-3 ps-5" id="deliver1">
+            <p class="ps-5 moga">Bajakhana</p>
+            <p class="ps-5">Kaliawali</p>
+            <p class="ps-5 moga">Malerkotla</p>
+            <p class="ps-5">Khanna</p>
+            <p class="ps-5 moga">Muktsar</p>
+            <p class="ps-5">Rajpura</p>
+        </div>
+    </div>
+</div>
+<!--row end-->
+{% endblock %}

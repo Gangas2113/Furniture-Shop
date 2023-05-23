@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}Product Detail{% endblock %}
+{%block content%}
+
+<div class="row">
+  <div class="col-md-6 p-5 ps-5">
+        <img src="/media/{{ p.photo }}" width="100%" height="500" data-aos="flip-left" />
+        <div class="row">
+            <div class="col-md-6" id="blogpic">
+                <img src="/media/{{ p.photo1 }}" width="100%" height="200" data-aos="flip-left" />
+            </div>
+            <div class="col-md-6" id="blogpic">
+                <img src="/media/{{ p.photo2 }}" width="100%" height="200" data-aos="flip-left" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 p-5">
+        <h2 data-aos="zoom-in-right">{{ p.title }}</h2>
+        
+            
+            <h3>Rs.{{p.sellingprice}}</h3>
+            
+                <hr class="style1 text-dark">
+           
+            <p class="text-secondary material11"><span class=" text-dark material11 fw-bold">Material: </span>{{p.material}}</p>
+            <p class="text-secondary material11"><span class="text-dark material11 fw-bold">Size: </span> {{p.size}}</p>
+            <p class="text-secondary material11"><span class="text-dark material11 fw-bold">Color: </span>{{p.color}}</p>
+            <p class="text-secondary material11"><span class="text-dark materail11 fw-bold">Style: </span>{{p.style}}</p>
+            <p class="text-secondary material11"><span class="text-dark materail11 fw-bold">Tag: </span>{{p.tag}}</p>
+            
+            <hr class="style1 text-dark">
+            <h4>About This Item</h4>
+            <p class="safe15 text-secondary">{{ p.description|safe}}</p>
+    </div>
+    <form action="{% url 'cart:cart_add' p.id %}" method="post">
+        {% csrf_token %}
+        {{ cart_add_product_form }}
+        <div class="p-5">
+        <input type="submit" value="Add to Cart" class="btn btn-dark">
+        </div>
+    </form>
+</div>
+
+
+
+<div  class="row bg-light ps-5">
+    <div class="col-md-6">
+        {% if user.is_authenticated %}
+        <form action="/insertreview/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label><h3 class="p-3">Post a Review</h3></label>
+            <input type="hidden" value="{{ request.path }}" name="next" />
+            <input class="form-control" type="hidden" value="{{ user.first_name }}" name="name" placeholder="Enter Your Name" /><br>
+            <input class="form-control" type="hidden" name="email" value="{{ user.email }}" placeholder="Enter Your Email" /><br>
+
+            <textarea class="form-control" name="message" placeholder="Post your review"></textarea><br>
+            <input type="hidden" name="userid" value="{{ user.id }}" />
+            <input type="hidden" name="proid" value="{{ p.id }}" />
+            <button class="btn btn-info" type="submit">Submit Now</button>
+        </form>
+        {% else %}
+        <a href="/login/?next={{ request.path }}" class="btn btn-dark">Login if you want to give review</a>
+        {% endif %}
+    </div>
+    
+</div>
+
+
+{% endblock %}

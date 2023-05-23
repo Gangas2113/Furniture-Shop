@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Your Shopping Cart| Checkout
+{% endblock %}
+
+{% block content %}
+
+<script>
+    $(document).ready(function(){
+        $("#ordercreate input").addClass("form-control");
+    });
+  </script>
+
+        <div class="row bg-light p-5">
+            <div class="col-md-12">
+                <h4 class="page-header" style="text-align:center; font-size:39px; color:black;">Fill Your Details</h4>
+            </div>
+        </div>
+        <div class="row bg-light" id="ordercreate">
+            <div class="col-md-10 ">
+                <form action="" method="post" class="forms text-center offset-2">
+                    {% csrf_token %}
+                    {{ form.as_p }}<br>
+                    
+                    <center><input type="submit" id="submitbtn"  class="btn btn-dark" value="Submit order"></center>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready( function() {
+                $(function() {
+                  $("#date").datepicker( { 
+                    minDate: +10, 
+                    maxDate: '+1M',
+                  beforeShowDay: jQuery.datepicker.noWeekends
+                  } );
+                });
+              });
+              </script>
+{% endblock %}
